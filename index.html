@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoration Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restoration Trivia Game</h1>
+        <p id="progress" class="progress"></p>
+        <div id="quiz">
+            <p id="question" class="question"></p>
+            <div id="options" class="options"></div>
+            <p id="feedback" class="result"></p>
+            <button id="next" class="hide">Next Question</button>
+        </div>
+        <div id="scoreScreen" class="hide">
+            <h2>Your Score:</h2>
+            <p id="finalScore"></p>
+            <button id="playAgain" onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

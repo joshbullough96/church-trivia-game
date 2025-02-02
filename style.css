@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Different colors for each button */
+.options button:nth-child(1) { background-color: #e83912; } /* Red */
+.options button:nth-child(2) { background-color: #1e9fce; } /* Blue */
+.options button:nth-child(3) { background-color: #068a06; } /* Green */
+.options button:nth-child(4) { background-color: #e6ab08; } /* Yellow */
+
+/* Hover effect */
+.options button:hover {
+    filter: brightness(90%);
+}
+
+/* Disable buttons after selection */
+button:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+
+.hide {
+    display: none;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#next, #playAgain {
+    background-color: #007bff;
+}
